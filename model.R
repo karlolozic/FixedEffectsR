@@ -20,22 +20,22 @@
 #                                                                                    #
 # The fixed effect model is as follows:                                              #
 #                                                                                    #
-# y = ?? + X?? + u                                                                     #
+# y = a + XB + u                                                                     #
 # where:                                                                             #
-# u = Z?? + ??                                                                         #
+# u = ZM + v                                                                         #
 #                                                                                    #
 # so ultimately we have                                                              #
-# y = ?? + X?? + Z?? + ??                                                                #
+# y = a + XB + ZM + v                                                                #
 # where:                                                                             #
 # X is the vector of dependent variable inputs                                       #
 # Z is a vector of industry and time unvarying factors picked up by the model        #
 #                                                                                    #
 # In particular for this example we have:                                            #
-# Y(i,t) = ??0 + ??1GDPGrowth(i,t) + ??2RevenueChange(i,t) + ??(i,t) + ??(i,t) + ??(i,t)   #
+# Y(i,t) = a0 + b1GDPGrowth(i,t) + b2RevenueChange(i,t) + I(i,t) + T(i,t) + e(i,t)   #
 # where:                                                                             #
-# ??(i,t) is the industry fixed effects                                               #
-# ??(i,t) is the time fixed effects                                                   #
-# ??(i,t) is the residual                                                             #
+# I(i,t) is the industry fixed effects                                               #
+# T(i,t) is the time fixed effects                                                   #
+# e(i,t) is the residual                                                             #
 ######################################################################################
 
 
